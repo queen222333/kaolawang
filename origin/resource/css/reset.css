@@ -1,0 +1,66 @@
+@charset 'utf-8';
+html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li,img,input,form,fieldset,legend{
+    margin: 0;
+    padding: 0;
+}
+section,header,footer,nav,figcaption,figure{
+    display: block;
+}
+body{
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 16px;
+}
+ul,ol,li{
+    list-style: none;
+}
+a,u{
+    text-decoration: none;
+}
+b,strong{
+    font-weight: normal;
+}
+em,i{
+    font-style: normal;
+}
+
+img,fieldset,input,button{
+    border: none;
+}
+textarea{
+    resize: none;
+}
+input{
+    outline: none;
+}
+.text_ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.border_none{
+    border: none;
+}
+.bg_none{
+    background: none;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.clear_fix:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear_fix{
+    zoom: 1;
+}

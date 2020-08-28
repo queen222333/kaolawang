@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../resource/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1867260_vu9qj7e80jk.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="../resource/css/swiper.css">
+    <style>
+        .swiper-container {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header" class="header">
+        <div class="container">
+            <ul class="nav float-left" id="header_nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">考拉欢迎你!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./regist.html">免费注册</a>
+                </li>
+                <li class="nav-item erweima" id="erweima">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">手机考拉
+                    </a>
+                    <img id="kaola_img" style="display: none;"
+                        src="https://kaola-haitao.oss.kaolacdn.com/314dd8b1-a77c-4897-bb9e-5237b9200b65T2001192035_180_180.png"
+                        alt="">
+                </li>
+            </ul>
+            <div class="nav1 float-right">
+                <div class="btn-group" style="background-color: transparent;">
+                    <button type="button" class="btn btn-danger">每日签到</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <!-- </div> -->
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">我的订单</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">个人中心</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">我的优惠券</a>
+                            <a class="dropdown-item" href="#">我的红包</a>
+                            <a class="dropdown-item" href="#">我的考拉豆</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">账号管理</a>
+                            <a class="dropdown-item" href="#">我的实名认证</a>
+                            <a class="dropdown-item" href="#">我的发票抬头</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">我收藏的商品</a>
+                            <a class="dropdown-item" href="#">我关注的品牌</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">售后管理</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">客户服务</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">我的优惠券</a>
+                            <a class="dropdown-item" href="#">我的红包</a>
+                            <a class="dropdown-item" href="#">我的考拉豆</a>
+                            <a class="dropdown-item" href="#">账号管理</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">充值中心</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">话费充值</a>
+                            <a class="dropdown-item" href="#">游戏充值</a>
+                            <a class="dropdown-item" href="#">Appstore充值卡</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">消费者权益</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">消费者告知书</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">更多</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">视频内容</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- head-content -->
+    <section id="head-content" class="head-content">
+        <h1 class="logo">
+            <a href="./index.html">
+                <img src="https://kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png?x-oss-process=image/resize,w_210,h_0/quality,q_85&v=1"
+                    alt="">
+            </a>
+        </h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="口红" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="border-radius: 20px;">
+                    <span class="iconfont icon-fangdajing"></span>
+                </button>
+            </div>
+            <div class="shopping">
+                <i class="iconfont icon-che1"></i>购物车
+            </div>
+        </div>
+
+    </section>
+    <!-- banner-nav -->
+    <section class="banner-nav" id="banner-nav">
+        <div class="container">
+            <ul class="nav float-left" id="header_nav">
+                <li class="nav-item" style="background-color: red;width: 165px;">
+                    <a class="nav-link active" href="#" style="color: white;">所有分类</a>
+                    <ul class="list-group list-group-flush" style="display:block">
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            美容彩妆
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            母婴儿童
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            营养保健
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            数码家电
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            个护家请
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            服饰鞋靴
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            运动户外
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            手表配饰
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            轻奢生活
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            家具生活
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            环球美食
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            宠物生活
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                    </ul>
+                    <div class="dropdown-menu">
+                        <div class="menu_left">
+                            <a class="dropdown-item" href="#">护肤</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i>洁面</i>
+                                <i>卸妆</i>
+                                <i>爽肤水</i>
+                                <i>面霜</i>
+                                <i>脸部护理</i>
+
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i>洁面</i>
+                                <i>卸妆</i>
+                                <i>爽肤水</i>
+                                <i>面霜</i>
+                                <i>脸部护理</i>
+
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i>洁面</i>
+                                <i>卸妆</i>
+                                <i>爽肤水</i>
+                                <i>面霜</i>
+                                <i>脸部护理</i>
+
+                            </a>
+                            <a class="dropdown-item" href="#">护肤</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i>洁面</i>
+                                <i>卸妆</i>
+                                <i>爽肤水</i>
+                                <i>面霜</i>
+                                <i>脸部护理</i>
+
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i>洁面</i>
+                                <i>卸妆</i>
+                                <i>爽肤水</i>
+                                <i>面霜</i>
+                                <i>脸部护理</i>
+
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i>洁面</i>
+                                <i>卸妆</i>
+                                <i>爽肤水</i>
+                                <i>面霜</i>
+                                <i>脸部护理</i>
+                            </a>
+                        </div>
+                        <div class="menu_right">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/ieft86iu85_120_120.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/idvqc2kv42.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/icc1uivj43.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/ii71no6h49_120_120.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/igats98t62_120_120.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/ic8p1ibz13.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/iifru49i25_120_120.jpg" alt="">
+                            <img src="https://kaola-haitao.oss.kaolacdn.com/1bteeon4j97_120_120.jpg" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html" style="color: #ff5160;">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./list.html">海外直邮</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./list.html">人气面膜</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./list.html">充值</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./list.html">工厂店</a>
+                </li>
+                <li class="nav-item erweima" id="erweima">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">充值
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <!-- banner -->
+    <section class="banner-con">
+        <div class="swiper-container" style="height: 500px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                        <img
+                            src="https://kaola-haitao.oss.kaolacdn.com/b33a7260-f298-4b46-abb2-8d1f973c4ae1T2008211347_1920_506.jpg">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                        <img src="http://kaola-haitao.oss.kaolacdn.com/7245065982c84ecbb04c0c9b7aefa47e_1920_506.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                        <img src="http://kaola-haitao.oss.kaolacdn.com/39c64e802f5e42d89f4ba0568868a682_1920_506.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                        <img src="http://kaola-haitao.oss.kaolacdn.com/7245065982c84ecbb04c0c9b7aefa47e_1920_506.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                        <img src="http://kaola-haitao.oss.kaolacdn.com/39c64e802f5e42d89f4ba0568868a682_1920_506.png">
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- content -->
+    <section class="content-con">
+        <div class="price">
+            <img src="https://kaola-haitao.oss.kaolacdn.com/0f584d8e-12e0-4cba-883d-c58769340deeT2005291133_1920_308.png?x-oss-process=image/resize,w_1920,h_308/quality,q_95"
+                alt="">
+        </div>
+        <div class="part">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./list.html">运动户外 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">热搜词:</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">阿迪达斯<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">耐克</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">斯凯奇</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">安德玛</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sports">
+                <div class="sports_l">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">男运动鞋</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">女运动鞋</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">运动服饰</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">速干T恤</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">健身服饰</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">户外背包</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sports_m">
+                    <div class="sports_box">
+                        <h3>斯凯奇新品上市</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/Mw0P2sxDT1t6CO1WSBJz1T1811012031_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>斯凯奇新品上市</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/umAQZXf3uV4sbH1KtWWu2T1811012031_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>斯凯奇新品上市</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/BObF5FdK8cLDSFEFRm2I3T1811012031_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>斯凯奇新品上市</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/fc4a9722-86a5-476f-a106-089dabfd5eb1T2001031801_180_144.png?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                </div>
+                <div class="sports_r">
+                    <h4>最新热卖</h4>
+                    <div class="swiper-pagination swiper-pagination-white" style="margin-left: 100px;"></div>
+                    <div class="swiper-container" style="height: 479px;width: 230px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/7d1a9406f98041078cb89b19fab4184c_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/21819aa882d447ba83d9067360a6f193_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/8c3451afa2e3414582a29f3210a494901528890164119jid1q8ow15905.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/b931d3e7-6ea5-48d5-99f2-cec4a960985b?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/7d1a9406f98041078cb89b19fab4184c_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/21819aa882d447ba83d9067360a6f193_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/8c3451afa2e3414582a29f3210a494901528890164119jid1q8ow15905.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/b931d3e7-6ea5-48d5-99f2-cec4a960985b?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/7d1a9406f98041078cb89b19fab4184c_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/21819aa882d447ba83d9067360a6f193_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/8c3451afa2e3414582a29f3210a494901528890164119jid1q8ow15905.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/b931d3e7-6ea5-48d5-99f2-cec4a960985b?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【刘昊然同款】PUMA彪马Smash v2 L/VULC
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+
+                        <!-- Add Navigation -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="brand">
+                <h3>热卖品牌</h3>
+                <div class="put_img">
+                    <div class="img_box">
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/ii02po4970_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/ii02shtz66_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/1c2gohbio65_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/1cnij2nrr52_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/1buiq2n6i1_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part part-one">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./list.html">美妆专区</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">热搜词:</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">面膜<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">口红</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">眼霜</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">精华</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">卸妆</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sports">
+                <div class="sports_l">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">精致护肤</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">人气面膜</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">大牌彩妆</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">防晒修护</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">迷人香氛</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">面部精华</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sports_m">
+                    <div class="sports_box">
+                        <h3>每日上新</h3>
+                        <p>扫遍全球美妆新货</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/2bEI4TPTFTbcefQgssLIT1811261707_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>热销榜单</h3>
+                        <p>超人气护肤彩妆</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/vAhTrMm6boBh0bW7oerMT1811261716_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>美妆N元任选</h3>
+                        <p>99元心动任选</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/ybMv0y5zMFNBplpEnDKxa9qT1811261728_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>神价购爆款</h3>
+                        <p>好物剁手不停</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/FsUTJMRvzDX3t9LoCM10T1811261734_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                </div>
+                <div class="sports_r">
+                    <h4>最新热卖</h4>
+                    <div class="swiper-pagination swiper-pagination-white" style="margin-left: 100px;"></div>
+                    <div class="swiper-container" style="height: 479px;width: 230px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/43596309d51144a6b0846215c1ce379615959066421925A3A69EFFDD5A2D62419F871F58818F3.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【修颜提亮】LΛNEIGE 兰芝 雪纱丝
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/7a012400ece7403b90dec4a1122613181595225919516CA88DB2AD2F6C35523F275C2E84F58CC.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    EltaMD 氨基酸泡沫卸妆洁面乳 207毫升 泡
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/729b3d61f0314c34bc25b7bf9823f00915900474227445D9DB2BFD8E43969D43965FC712E33E6.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    SHISEIDO 资生堂安热沙小金瓶防晒露
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/f6301175f47e492ab18a7962a99d32761565262946012jz2l56ti11741.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【3盒装 】Dr.Jart+ 蒂佳婷宛若新生水漾保
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/43596309d51144a6b0846215c1ce379615959066421925A3A69EFFDD5A2D62419F871F58818F3.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【修颜提亮】LΛNEIGE 兰芝 雪纱丝
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/7a012400ece7403b90dec4a1122613181595225919516CA88DB2AD2F6C35523F275C2E84F58CC.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    EltaMD 氨基酸泡沫卸妆洁面乳 207毫升 泡
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/729b3d61f0314c34bc25b7bf9823f00915900474227445D9DB2BFD8E43969D43965FC712E33E6.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    SHISEIDO 资生堂安热沙小金瓶防晒露
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/f6301175f47e492ab18a7962a99d32761565262946012jz2l56ti11741.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【3盒装 】Dr.Jart+ 蒂佳婷宛若新生水漾保
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/43596309d51144a6b0846215c1ce379615959066421925A3A69EFFDD5A2D62419F871F58818F3.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【修颜提亮】LΛNEIGE 兰芝 雪纱丝
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/7a012400ece7403b90dec4a1122613181595225919516CA88DB2AD2F6C35523F275C2E84F58CC.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    EltaMD 氨基酸泡沫卸妆洁面乳 207毫升 泡
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/729b3d61f0314c34bc25b7bf9823f00915900474227445D9DB2BFD8E43969D43965FC712E33E6.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    SHISEIDO 资生堂安热沙小金瓶防晒露
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/f6301175f47e492ab18a7962a99d32761565262946012jz2l56ti11741.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【3盒装 】Dr.Jart+ 蒂佳婷宛若新生水漾保
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+
+                        <!-- Add Navigation -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="brand">
+                <h3>热卖品牌</h3>
+                <div class="put_img">
+                    <div class="img_box">
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/1bk8ndmup45_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/1btbadu1946_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/ifxc1wa478_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/1c126l96j31_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/1btlvtbrr35_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part part-two">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./list.html">个人家清</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">热搜词:</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">秀发滋养<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">细嫩护手</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">姨妈无感</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">口腔清新</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">纸品湿巾</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sports">
+                <div class="sports_l">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">洗发护发</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">身体护理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">口腔护理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">女性护理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">居家清洁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">宠物生活</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sports_m">
+                    <div class="sports_box">
+                        <h3>超强护发装备</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/add22730-9873-4a9d-b2b0-676d04d1c496T2005111157_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>王牌身体护理</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/a8e99191-2364-42e3-96e7-0b91bc507615T2001201903_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>居家洗护日用</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/db0828bf-fdb9-4771-a2e7-0d106d8716e8T2005111145_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>精致萌宠生活</h3>
+                        <p>热门鞋款低至5.7折</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/0ae3dc15-99d8-4358-9af1-5af10a9cd1caT2001201834_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                </div>
+                <div class="sports_r">
+                    <h4>最新热卖</h4>
+                    <div class="swiper-pagination swiper-pagination-white" style="margin-left: 100px;"></div>
+                    <div class="swiper-container" style="height: 479px;width: 230px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/973ecd5a1d084b10a20e44b90502686415913288035992E94D7C8DEA5B3A3263D1602391340FC.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    花王 Lauríer 乐而雅 S系列 超薄瞬吸日用护
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/fe5857166a1140c99a395d85ddc057d31533263188991jkddbc9x10220.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【青春有你同款】SHISEIDO 资生堂旗
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/faa794aadc9d499cb4eb4db70ad6f8c81575255843045k3nunnis10968.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    LUCAS' PAPAW 卢卡斯 神奇番木瓜万用膏
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/8f4dff27105342febc4e31b4905c5a821543977568198jpakdo6p10110.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    herbacin 贺本清 小甘菊经典手霜 75毫升/支
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/973ecd5a1d084b10a20e44b90502686415913288035992E94D7C8DEA5B3A3263D1602391340FC.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    花王 Lauríer 乐而雅 S系列 超薄瞬吸日用护
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/fe5857166a1140c99a395d85ddc057d31533263188991jkddbc9x10220.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【青春有你同款】SHISEIDO 资生堂旗
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/faa794aadc9d499cb4eb4db70ad6f8c81575255843045k3nunnis10968.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    LUCAS' PAPAW 卢卡斯 神奇番木瓜万用膏
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/8f4dff27105342febc4e31b4905c5a821543977568198jpakdo6p10110.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    herbacin 贺本清 小甘菊经典手霜 75毫升/支
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss-cn-zhangjiakou.aliyuncs.com/973ecd5a1d084b10a20e44b90502686415913288035992E94D7C8DEA5B3A3263D1602391340FC.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    花王 Lauríer 乐而雅 S系列 超薄瞬吸日用护
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/fe5857166a1140c99a395d85ddc057d31533263188991jkddbc9x10220.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【青春有你同款】SHISEIDO 资生堂旗
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/faa794aadc9d499cb4eb4db70ad6f8c81575255843045k3nunnis10968.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    LUCAS' PAPAW 卢卡斯 神奇番木瓜万用膏
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/8f4dff27105342febc4e31b4905c5a821543977568198jpakdo6p10110.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    herbacin 贺本清 小甘菊经典手霜 75毫升/支
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+
+                        <!-- Add Navigation -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="brand">
+                <h3>热卖品牌</h3>
+                <div class="put_img">
+                    <div class="img_box">
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/ieww1xa027_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/ig28fghh45_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/j1luaym731_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/ix2kwjyf95_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/j17ileci18_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part part-three">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./list.html">轻奢馆</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">热搜词:</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">MKPinko<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gucci</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Burberry</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">FENDI</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">FENDI</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Moschino</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sports">
+                <div class="sports_l">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">轻奢潮包</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">重奢名包</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">服饰配件</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">速干T恤</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">男士专区</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">功能箱包</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sports_m">
+                    <div class="sports_box">
+                        <h3>新品专区</h3>
+                        <p>大牌新品站</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/69f487ad-3f20-4cd5-ba28-87d922c7a8c2T1909161114_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>奥莱折扣</h3>
+                        <p>春季折扣享不停</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/15be7a12-8fe8-4828-90f9-0e22a541d524T1909161114_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>分期免息</h3>
+                        <p>大牌享12期免息</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/91a5c13c-b0cd-4f2a-9e51-7681f7efe199T1909161114_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                    <div class="sports_box">
+                        <h3>全球名店</h3>
+                        <p>精选全球大牌</p>
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/a7effebb-97f9-4305-8ca2-630a3637ede2T1909161114_180_144.jpg?x-oss-process=image/resize,w_180/quality,q_95"
+                            alt="">
+                    </div>
+                </div>
+                <div class="sports_r">
+                    <h4>最新热卖</h4>
+                    <div class="swiper-pagination swiper-pagination-white" style="margin-left: 100px;"></div>
+                    <div class="swiper-container" style="height: 479px;width: 230px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/da505073-a6a0-4228-a207-817c0d1cedf6?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【新色】FURLA 芙拉 METROPOLIS系列 单
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/8b6ee9d3-0185-4d6b-8ee6-9d335292d0ab?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    网易严选 24寸 纯PC“铝框”（非全铝）
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/c1b0de5f1767445a8855c768c4480675_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    网易严选 28寸 纯PC“铝框”（非全铝）
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/94367d8786b946219ec92a09a0003d4c1572492212309k2e59gcq13661.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【AB同款·迷你贝莉蝴蝶结2.0】UGG Mini
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/da505073-a6a0-4228-a207-817c0d1cedf6?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【新色】FURLA 芙拉 METROPOLIS系列 单
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/8b6ee9d3-0185-4d6b-8ee6-9d335292d0ab?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    网易严选 24寸 纯PC“铝框”（非全铝）
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/c1b0de5f1767445a8855c768c4480675_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    网易严选 28寸 纯PC“铝框”（非全铝）
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/94367d8786b946219ec92a09a0003d4c1572492212309k2e59gcq13661.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【AB同款·迷你贝莉蝴蝶结2.0】UGG Mini
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <div class="sports_bottom">
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/da505073-a6a0-4228-a207-817c0d1cedf6?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【新色】FURLA 芙拉 METROPOLIS系列 单
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/8b6ee9d3-0185-4d6b-8ee6-9d335292d0ab?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    网易严选 24寸 纯PC“铝框”（非全铝）
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-pop.oss.kaolacdn.com/c1b0de5f1767445a8855c768c4480675_800_800.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    网易严选 28寸 纯PC“铝框”（非全铝）
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                        <div class="sports_one">
+                                            <div class="sports_img">
+                                                <img src="https://kaola-haitao.oss.kaolacdn.com/94367d8786b946219ec92a09a0003d4c1572492212309k2e59gcq13661.jpg?x-oss-process=image/resize,w_75/quality,q_95"
+                                                    alt="">
+                                            </div>
+                                            <div class="sports_detail">
+                                                <p>
+                                                    【AB同款·迷你贝莉蝴蝶结2.0】UGG Mini
+                                                </p>
+                                                <i>¥239</i> <del>¥699</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+
+                        <!-- Add Navigation -->
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="brand">
+                <h3>热卖品牌</h3>
+                <div class="put_img">
+                    <div class="img_box">
+                        <img src="https://kaola-haitao.oss.kaolacdn.com/j1hk9xa040_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/ig3abe8011_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/iewe7rzl48_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/j0riz3kq51_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                    <div class="img_box"><img
+                            src="https://kaola-haitao.oss.kaolacdn.com/ihflrxzu18_300_300.jpg?x-oss-process=image/resize,w_120/quality,q_95"
+                            alt="">
+                        <i class="iconfont icon-xin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- certificate -->
+    <section class="certificate">
+        <div class="certificate_one float_left">
+            <span>正</span> 正品承诺
+        </div>
+        <div class="certificate_one float_left">
+            <span>低</span>低价保障
+        </div>
+        <div class="certificate_one float_left">
+            <span>退</span>30天无忧退货
+        </div>
+        <div class="certificate_one float_left">
+            <span>邮</span>满88包邮
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <section class="footer-con">
+            <div class="footer_top_logo float_left">
+                <img src="https://kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png?v=1&x-oss-process=image%2Fresize%2Cw_220%2Ch_0%2Fquality%2Cq_85"
+                    alt="">
+            </div>
+            <dl class="footer_top_nav float_left">
+                <dt>考拉保障</dt>
+                <dd>假一赔十</dd>
+                <dd>廉正举报</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>新手指南</dt>
+                <dd>购物流程</dd>
+                <dd>支付方式</dd>
+                <dd>通关税费</dd>
+                <dd>常见问题</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>售后服务</dt>
+                <dd>售后政策</dd>
+                <dd>退货流程</dd>
+                <dd>特色服务</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>物流配送</dt>
+                <dd>配送方式</dd>
+                <dd>配送服务</dd>
+                <dd>运费标准</dd>
+                <dd>物流跟踪</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>商家服务</dt>
+                <dd>招商合作</dd>
+                <dd>销售联盟</dd>
+                <dd>商家成长</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>关于我们</dt>
+                <dd>联系我们</dd>
+                <dd>CEO邮箱</dd>
+                <dd>线下店</dd>
+            </dl>
+            <img class="float_right"
+                src="https://kaola-haitao.oss.kaolacdn.com/a22c58ba-e800-4286-9a6e-0d4d159a2920.png" alt="">
+        </section>
+    </footer>
+    <div class="footer_bottom">
+        <div class="footer_center">
+            <h3>隐私政策 - 考拉海购</h3>
+            <p>增值电信业务经营许可证：浙B2-20160288 自营经营者信息 （浙）网械平台备字[2018]第00007号 浙江省网络食品销售第三方平台提供者备案：浙网食A33010006</p>
+            <p><img src="https://kaola-haitao.oss.kaolacdn.com/f28aa8ee818a42bf832341f605eccefb.png" alt=""> 浙公网安备
+                33010802002216号 阿里巴巴版权所有©2003-2020互联网药品信息服务资格证书编号（浙）-2017-0027 浙ICP备16011229号</p>
+            <div>
+                <img class="img1" src="https://kaola-haitao.oss.kaolacdn.com/d720d83b55a04b6f932ea845c673c5bf.png"
+                    alt="">
+                <img class="img2" src="https://img.alicdn.com/tfs/TB1rcIoq.Y1gK0jSZFCXXcwqXXa-65-70.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../resource/js/Popper.js"></script>
+    <script src="../resource/js/bootstrap.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../resource/js/swiper.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

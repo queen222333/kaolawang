@@ -1,0 +1,41 @@
+.list_center{
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+    .content-center{
+        width: 1100px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+        .operation_list{
+            width: 1100px;
+            height: 150px;
+            // border: 1px solid #ccc;
+            .input-group{
+                margin-bottom: 0!important;
+                border: 0;
+                color: #333;
+                .input-group-text{
+                    width: 100px;
+                    text-align: center;
+                    background-color: #f8f8f8;
+                    font-size: 12px;
+                  }
+                .form-control{
+                    height: 34px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .container{
+            margin: 0 auto;
+            padding-left: 20px;
+           .list-group{
+               margin-top: 20px;
+            .list-group-item{
+                background-color: #f8f8f8;
+               }
+           }
+
+        }
+    }
+}

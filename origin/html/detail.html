@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1867260_vu9qj7e80jk.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header" class="header">
+        <div class="container">
+            <ul class="nav float-left" id="header_nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">考拉欢迎你!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./regist.html">免费注册</a>
+                </li>
+                <li class="nav-item erweima" id="erweima">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">手机考拉
+                    </a>
+                    <img id="kaola_img" style="display: none;"
+                        src="https://kaola-haitao.oss.kaolacdn.com/314dd8b1-a77c-4897-bb9e-5237b9200b65T2001192035_180_180.png"
+                        alt="">
+                </li>
+            </ul>
+            <div class="nav1 float-right">
+                <div class="btn-group" style="background-color: transparent;">
+                    <button type="button" class="btn btn-danger">每日签到</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <!-- </div> -->
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">我的订单</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">个人中心</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">我的优惠券</a>
+                            <a class="dropdown-item" href="#">我的红包</a>
+                            <a class="dropdown-item" href="#">我的考拉豆</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">账号管理</a>
+                            <a class="dropdown-item" href="#">我的实名认证</a>
+                            <a class="dropdown-item" href="#">我的发票抬头</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">我收藏的商品</a>
+                            <a class="dropdown-item" href="#">我关注的品牌</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">售后管理</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">客户服务</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">我的优惠券</a>
+                            <a class="dropdown-item" href="#">我的红包</a>
+                            <a class="dropdown-item" href="#">我的考拉豆</a>
+                            <a class="dropdown-item" href="#">账号管理</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">充值中心</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">话费充值</a>
+                            <a class="dropdown-item" href="#">游戏充值</a>
+                            <a class="dropdown-item" href="#">Appstore充值卡</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">消费者权益</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">消费者告知书</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">更多</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group" style="background-color: transparent;">
+                        <button type="button" class="btn btn-danger">视频内容</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- head-content -->
+    <section id="head-content" class="head-content">
+        <h1 class="logo">
+            <a href="./index.html">
+                <img src="https://kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png?x-oss-process=image/resize,w_210,h_0/quality,q_85&v=1"
+                    alt="">
+            </a>
+        </h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="口红" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="border-radius: 20px;">
+                    <span class="iconfont icon-fangdajing"></span>
+                </button>
+            </div>
+            <div class="shopping">
+                <i class="iconfont icon-che1"></i>购物车
+            </div>
+        </div>
+
+    </section>
+    <!-- banner-nav -->
+    <section class="banner-nav" id="banner-nav">
+        <div class="container">
+            <ul class="nav float-left" id="header_nav">
+                <li class="nav-item" style="background-color: red;width: 165px;" id="list_hide">
+                    <a class="nav-link active" href="#" style="color: white;">所有分类</a>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            美容彩妆
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            母婴儿童
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            营养保健
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            数码家电
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            个护家请
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            服饰鞋靴
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            运动户外
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            手表配饰
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            轻奢生活
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            家具生活
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            环球美食
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="iconfont icon-huangguan"></i>
+                            宠物生活
+                            <i class="iconfont icon-dayu"></i>
+                        </li>
+                    </ul>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">护肤</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <i>洁面</i>
+                            <i>卸妆</i>
+                            <i>爽肤水</i>
+                            <i>面霜</i>
+                            <i>脸部护理</i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i>洁面</i>
+                            <i>卸妆</i>
+                            <i>爽肤水</i>
+                            <i>面霜</i>
+                            <i>脸部护理</i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i>洁面</i>
+                            <i>卸妆</i>
+                            <i>爽肤水</i>
+                            <i>面霜</i>
+                            <i>脸部护理</i>
+                        </a>
+                        <a class="dropdown-item" href="#">护肤</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <i>洁面</i>
+                            <i>卸妆</i>
+                            <i>爽肤水</i>
+                            <i>面霜</i>
+                            <i>脸部护理</i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i>洁面</i>
+                            <i>卸妆</i>
+                            <i>爽肤水</i>
+                            <i>面霜</i>
+                            <i>脸部护理</i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i>洁面</i>
+                            <i>卸妆</i>
+                            <i>爽肤水</i>
+                            <i>面霜</i>
+                            <i>脸部护理</i>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" style="color: #ff5160;">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">海外直邮</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">人气面膜</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">充值</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">工厂店</a>
+                </li>
+                <li class="nav-item erweima" id="erweima">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">充值
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <!-- detail -->
+    <div id="detail" class="detail">
+        <div class="container">
+            <div class="row box" id="box">
+
+            </div>
+        </div>
+    </div>
+    <!-- certificate -->
+    <section class="certificate">
+        <div class="certificate_one float_left">
+            <span>正</span> 正品承诺
+        </div>
+        <div class="certificate_one float_left">
+            <span>低</span>低价保障
+        </div>
+        <div class="certificate_one float_left">
+            <span>退</span>30天无忧退货
+        </div>
+        <div class="certificate_one float_left">
+            <span>邮</span>满88包邮
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <section class="footer-con">
+            <div class="footer_top_logo float_left">
+                <img src="https://kaola-haitao.oss.kaolacdn.com/271c7d10-5167-443a-afe5-9f0729964b5e.png?v=1&x-oss-process=image%2Fresize%2Cw_220%2Ch_0%2Fquality%2Cq_85"
+                    alt="">
+            </div>
+            <dl class="footer_top_nav float_left">
+                <dt>考拉保障</dt>
+                <dd>假一赔十</dd>
+                <dd>廉正举报</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>新手指南</dt>
+                <dd>购物流程</dd>
+                <dd>支付方式</dd>
+                <dd>通关税费</dd>
+                <dd>常见问题</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>售后服务</dt>
+                <dd>售后政策</dd>
+                <dd>退货流程</dd>
+                <dd>特色服务</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>物流配送</dt>
+                <dd>配送方式</dd>
+                <dd>配送服务</dd>
+                <dd>运费标准</dd>
+                <dd>物流跟踪</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>商家服务</dt>
+                <dd>招商合作</dd>
+                <dd>销售联盟</dd>
+                <dd>商家成长</dd>
+            </dl>
+            <dl class="footer_top_nav float_left">
+                <dt>关于我们</dt>
+                <dd>联系我们</dd>
+                <dd>CEO邮箱</dd>
+                <dd>线下店</dd>
+            </dl>
+            <img class="float_right"
+                src="https://kaola-haitao.oss.kaolacdn.com/a22c58ba-e800-4286-9a6e-0d4d159a2920.png" alt="">
+        </section>
+    </footer>
+    <div class="footer_bottom">
+        <div class="footer_center">
+            <h3>隐私政策 - 考拉海购</h3>
+            <p>增值电信业务经营许可证：浙B2-20160288 自营经营者信息 （浙）网械平台备字[2018]第00007号 浙江省网络食品销售第三方平台提供者备案：浙网食A33010006</p>
+            <p><img src="https://kaola-haitao.oss.kaolacdn.com/f28aa8ee818a42bf832341f605eccefb.png" alt=""> 浙公网安备
+                33010802002216号 阿里巴巴版权所有©2003-2020互联网药品信息服务资格证书编号（浙）-2017-0027 浙ICP备16011229号</p>
+            <div>
+                <img class="img1" src="https://kaola-haitao.oss.kaolacdn.com/d720d83b55a04b6f932ea845c673c5bf.png"
+                    alt="">
+                <img class="img2" src="https://img.alicdn.com/tfs/TB1rcIoq.Y1gK0jSZFCXXcwqXXa-65-70.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="../resource/js/jquery.min.js"></script>
+    <script src="../resource/js/Popper.js"></script>
+    <script src="../resource/js/bootstrap.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/detail.js"> </script>
+    <!-- <script src="../js/list.js"></script> -->
+</body>
+
+</html>

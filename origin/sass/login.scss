@@ -1,0 +1,109 @@
+.login-header{
+    border-bottom: 1px solid #ccc;
+    .header-con{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    position: relative;
+    h1{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 330px;
+    height: 65px;
+    line-height: 65px;
+    outline: none;
+    cursor: pointer;
+    }
+    }
+} 
+.content{
+    background-color: #f8f8f8;
+    .content-con{
+        height: 600px;
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        .img1{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -101px;
+            width: 400px;
+            height: 203px;
+        }
+        .login_box{
+            width: 350px;
+            height: 330px;
+            position: absolute;
+            right: 40px;
+            top: 100px;
+            background-color: #fff;
+            .login_top{
+                height: 288px;
+                padding: 35px 40px 0;
+                box-sizing: border-box;
+                h3{
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                p{
+                    font-size:12px;
+                    text-align: right;
+                    margin: 10px 0 8px;
+                    color: #999;
+                }
+                .login_text{
+                    width: 270px;
+                    height: 173px;
+                    position: relative;
+                    input{
+                        width: 270px;
+                        height: 36px;
+                        border: 1px solid #ccc;
+                        border-radius: 20px;
+                        padding-left: 35px;
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                    }
+                    span{
+                        width: 100px;
+                        position: absolute;
+                        left: 270px;
+                    }
+                    button{ 
+                        width: 270px;
+                        height: 36px;
+                        border-radius: 20px;
+                        text-align: center;
+                        background-color: red;
+                        color: #fff;
+                    }
+                    h4{
+                        font-size: 12px;
+                        color: #999;
+                        margin: 20px 0 0 10px;
+                    }
+                }
+            }
+            .login_bottom{
+                width: 350px;
+                height: 42px;
+                border-top: 1px solid #ccc;
+                position: relative;
+                text-align: center;
+                img{
+                    width: 270px;
+                    height: 21px;
+                    position: absolute;
+                    left: 50%;top: 50%;
+                    margin-left: -135px;
+                    margin-top: -10px;
+                    
+                }
+            }
+        }
+    }
+}
